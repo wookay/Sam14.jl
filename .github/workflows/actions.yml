@@ -20,5 +20,5 @@ jobs:
              export TERM='xterm-256color'
              echo $(tput setaf 214)256 $(tput setaf 202)colors
 
-             julia --color=yes -e 'using Pkg; pkg"add https://github.com/wookay/ThreeKingdoms.jl"'
+             julia --color=yes --project -e 'using Pkg; pkg"add https://github.com/wookay/ThreeKingdoms.jl"'
              julia --color=yes --project -e 'using Pkg; pkg"test"'
